@@ -1,5 +1,6 @@
 body {
-    background-color:rgb(3, 3, 22);
+    background-color: rgb(1, 1, 20);
+    /*background-color:rgb(0,44,69)*/
     font-family: Arial, sans-serif;
     color: aliceblue;
     /*overflow-y: scroll;*/
@@ -8,11 +9,14 @@ body {
 }
 
 .header {
-    background-color: rgb(66, 2, 42);
+    /*background: rgb(0,44,69);*/
+    background-color:  #052847;
+    /*background-color: rgb(3, 3, 22); 
+    /*background-color: rgb(96, 131, 1);*/
     height: 70px;
     width: 100%;
     display: flex;
-    margin-right: 40px;
+    margin-right: 10px;
     justify-content: flex-end;
     align-items: center;
 }
@@ -33,7 +37,7 @@ body {
 }
 
 .navbar ul li {
-    margin-left: 80px;
+    margin-left: 54px;
     margin-right: 50px;
     
 }
@@ -49,16 +53,17 @@ body {
 }
 
 
-#body_text {
+.body_text {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(to right, rgb(4, 76, 124), #013a3a);
     height: calc(100vh - 100px); /* Subtract the header height from the viewport height */
 }
 
 footer {
     display: block;
-    background-color: #2c0f02;
+    background-color: rgb(8, 8, 8); /* #013a3a;*/
     display: flex;
     height: 60px;
     width: 100%;
