@@ -2,6 +2,7 @@ body {
     background-color:rgb(3, 3, 22);
     font-family: Arial, sans-serif;
     color: aliceblue;
+    /*overflow-y: scroll;*/
     margin: 0;
     padding: 0;
 }
@@ -11,16 +12,17 @@ body {
     height: 70px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    margin-right: 40px;
+    justify-content: flex-end;
     align-items: center;
 }
 
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-   /* padding: 10px;
-    background-color: #f0f0f0;*/
+    padding: 10px;
+    /*background-color: #f0f0f0;*/
 }
 
 .navbar ul {
@@ -31,8 +33,9 @@ body {
 }
 
 .navbar ul li {
-    margin-right: 40px;
     margin-left: 80px;
+    margin-right: 50px;
+    
 }
 
 .navbar ul li a {
@@ -41,7 +44,12 @@ body {
     font-weight: bold;
 }
 
-.body_text {
+.navbar ul li a:hover {
+    color: #036624;
+}
+
+
+#body_text {
     display: flex;
     justify-content: center;
     align-items: center;
