@@ -44,7 +44,7 @@ body {
 
 .navbar ul li a {
     text-decoration: none;
-    color: white;
+    color: rgba(215, 226, 213, 0.952);
     font-weight: bold;
 }
 
