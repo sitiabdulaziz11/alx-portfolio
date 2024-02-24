@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>finder.com</title>
-    <link rel="stylesheet" type="text/css" href="css_directory/cssfile1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css_directory/cssfile.css">
 </head>
 <body>
     <header class="header">
+        
         <div class="navbar">
             <nav>
                 <ul>
@@ -16,11 +19,16 @@
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Sign up</a></li>
+                    <form action="">
+                        <input type="search" placeholder="Search your Beloved">
+                        <i class="fa fa-search"></i>
+                    </form>
                 </ul>
+                
             </nav>
         </div>
     </header>
-
+    <div id="phrase-container"></div>
     <div class="body_text">
         <h1> Welcome to Finder</h1>
     </div>
@@ -31,5 +39,26 @@
         </div>
         
     </footer>
+    <script>
+        // Array of phrases to display
+        const phrases = [
+            "Find Your Missing Friend",
+            "Get your Beloved Lost",
+            "Find Your Missing Family Member",
+        ];
+
+// Index to keep track of the current phrase
+let currentIndex = 0;
+
+// Function to change the content of the div element
+function changePhrase() {
+  document.getElementById("phrase-container").innerHTML = phrases[currentIndex];
+  currentIndex = (currentIndex + 1) % phrases.length;
+}
+
+// Call the changePhrase function every 5 seconds (5000 milliseconds)
+setInterval(changePhrase, 3000);
+
+    </script>
 </body>
 </html>
