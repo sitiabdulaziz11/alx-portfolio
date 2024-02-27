@@ -1,7 +1,7 @@
 
 .header {
     /*background: rgb(0,44,69);*/
-    background-color:  #052847;
+    background-color:  rgb(3, 92, 128);
     /*background-color: rgb(3, 3, 22); 
     /*background-color: rgb(96, 131, 1);*/
     height: 70px;
@@ -84,12 +84,14 @@ body {
 }
 #access1 p::before {
     content: "\2023";  /*Unicode character for a bullet point */
-    color: rgb(19, 19, 20); 
-    font-size: 40px; 
+    color: rgb(10, 10, 10); 
+    font-size: 45px; 
     margin-right: 10px;
     font-weight: bold;
     margin-top: -60px;
 }
+
+
 
 #phrase-container {
     
@@ -104,15 +106,29 @@ body {
     margin-bottom: -20px;
     color: rgb(247, 17, 197);
     background-color: black;
-    width: 350px;
+    width: 400px;
     border-radius: 43px;
     justify-content: flex-start;
   }
 
-  #phrase-container::selection {
+#phrase-container::selection {
   background-color: rgb(87, 212, 87);
 }
 
+.get-started button{
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    margin: 190px;
+    font-weight: bold;
+    float: right;
+    font-size: 100%;
+    color: greenyellow;
+    border-radius: 15px;
+    background-color: rgb(248, 11, 62);
+    border-style: #c5cfc4;
+}
+  
 form{
     position: relative;
     top: 20px;
@@ -217,7 +233,7 @@ footer {
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 0;
-    margin: 0px;
-    padding: 0px;
+    bottom: 0px;
+    margin: 0;
+    padding: 0;
 }
