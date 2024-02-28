@@ -30,23 +30,34 @@ body {
     justify-content: center;
     padding-left: 100px;
     padding-inline-end: 40px;
-    font-size: 25px;
+    font-size: 24px;
     align-items:flex-start;
-    margin: 50px;
+    margin: 30px;
     justify-items: center;
     text-align: center;
     width: 70%;
     font-weight: bold;
-    height: 30px;
+    height: 27px;
     /*background: linear-gradient(to right, /*rgb(4, 76, 124)*//*#013a3a, rgb(23, 184, 248));*/
     /* Subtract the header height from the viewport height */
 }
 
+.image-container {
+    text-align: center;
+    margin-top: -40px;
+    justify-content: center;
+}
+
+.image-container img {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: auto;
+}
+
 .contents{
     display:flex;
-    justify-content: space-between;
-   
-    
+    justify-content: space-between; 
 }
 
 .paragraph1 {
@@ -91,8 +102,6 @@ body {
     margin-top: -60px;
 }
 
-
-
 #phrase-container {
     
     font-size:35px;
@@ -106,7 +115,7 @@ body {
     margin-bottom: -20px;
     color: rgb(247, 17, 197);
     background-color: black;
-    width: 400px;
+    width: 350px;
     border-radius: 43px;
     justify-content: flex-start;
   }
@@ -115,7 +124,7 @@ body {
   background-color: rgb(87, 212, 87);
 }
 
-.get-started button{
+.get-started button {
     cursor: pointer;
     height: 50px;
     width: 150px;
@@ -188,8 +197,6 @@ form:hover .fa{
     color: white;
 }
 
-
-
 .navbar {
     display: flex;
     justify-content: center;
@@ -222,7 +229,7 @@ form:hover .fa{
 }
 
 .navbar ul li a:hover {
-    color: #036624;
+    color: #f86b06;
 }
 
 footer {
