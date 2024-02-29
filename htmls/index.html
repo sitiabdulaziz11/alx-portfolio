@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css_directory/main_cssfile.css">
 </head>
 <body>
-    <!--<header>
+    <!--<header class="header">
         <div class="navbar">
             <nav>
                 <ul>
@@ -22,10 +22,10 @@
                         <input type="search" placeholder="Search your Beloved here">
                         <i class="fa fa-search"></i>
                     </form>
-                </ul>
+                <!--</ul>
             </nav>
         </div>
-    </header>
+    </header>-->
     <div class="body_text">
         <h1> Welcome to Finder</h1>
     </div>
@@ -48,7 +48,29 @@
     <div class="image-container">
         <img src="image/friends.PNG" alt="meeting after a long time">
     </div>
-    
+    <!--<div class="photo">
+       <img src="image/fri3.PNG">
+        <img src="image/fri5.PNG">
+    </div>-->
+    <div class="body_para">
+        <h4 id="head1">We understand the emotional toll of losing someone and the importance of finding closure, and we are dedicated to create a platform.</h4>
+        <div class="parag2"> 
+            <p>- Our platform is dedicated to reuniting lost individuals with their loved ones, whether they are friends or family.</p>
+            <p>- With our user-friendly interface and robust search capabilities, we aim to make the process of finding missing persons as efficient and effective as possible.</p>
+        </div>
+        <div class="parag3">
+            <div class="goal">
+                <h1 id="goal1">Our Goal</h1>
+                <p>Our ultimate goal is to bring hope and relief to those who are searching for their lost loved.</p>
+                <p>To facilitate the reunting time of lost individuals.</p>
+            </div>
+            <div>
+                <h1 id="mission">Mission</h1>
+                <p>Our mission is to provide a platform where people can search for missing persons</p>
+                <p>share information, and connect with others who may have valuable insights or leads.</p>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="foot">
           <h3>alx Best</h3>  
@@ -61,19 +83,16 @@
             "Find Your Missing Family",
             "Reunite With Your Lost Friend",
         ];
-
-// Index to keep track of the current phrase
-let currentIndex = 0;
-
-// Function to change the content of the div element
-function changePhrase() {
-  document.getElementById("phrase-container").innerHTML = phrases[currentIndex];
-  currentIndex = (currentIndex + 1) % phrases.length;
-}
-
-// Call the changePhrase function every 5 seconds (5000 milliseconds)
-setInterval(changePhrase, 3000);
-
+        
+        let currentIndex = 0; // Index to keep track of the current phrase
+        // Function to change the content of the div element
+        function changePhrase() {
+            document.getElementById("phrase-container").innerHTML = phrases[currentIndex];
+            currentIndex = (currentIndex + 1) % phrases.length;
+        }
+        
+        setInterval(changePhrase, 3000);  // Call the changePhrase function every 5 seconds (5000 milliseconds)
+        
     </script>
 </body>
 </html>
