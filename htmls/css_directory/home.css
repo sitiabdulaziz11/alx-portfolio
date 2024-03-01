@@ -19,7 +19,7 @@ body {
 
 .text1 {
     display:flex;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 .left_text {
@@ -47,6 +47,7 @@ body {
 .body_form1 {
     display:flex;
     justify-content: space-between;
+    height: 500px;
 }
 
 .right_body_form form {
@@ -89,6 +90,22 @@ body {
     padding: 7px;
     margin: 20px;
     padding-left: 20px;
+}
+
+.howtouse {
+    justify-content: center;
+    align-items: center;
+    display: flexbox;
+    height: 1050px;
+    margin: 100px;
+    padding-left: 80px;
+    color: rgb(238, 233, 233);
+    font-size: 25px;
+    width: 700px;
+}
+
+#h1 {
+    color: rgb(3, 3, 3);
 }
 
 .header_form form{
