@@ -105,7 +105,10 @@ body {
 }
 
 #h1 {
-    color: rgb(3, 3, 3);
+    color: #98F306;
+}
+#h2 {
+    color: black
 }
 
 .header_form form{
