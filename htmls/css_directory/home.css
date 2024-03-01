@@ -6,8 +6,7 @@ body {
 .header {
     /*background: rgb(0,44,69);*/
     background-color:  rgb(3, 92, 128);
-    /*background-color: rgb(3, 3, 22); 
-    /*background-color: rgb(96, 131, 1);*/
+
     height: 70px;
     width: 100%;
     display: flex;

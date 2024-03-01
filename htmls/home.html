@@ -12,7 +12,7 @@
         <div class="navbar">
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
+                    <li><a href="home.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Login</a></li>
@@ -53,17 +53,5 @@
             </form>
         </div>
     </div>
-    <script>
-        document.querySelectorAll('.navbar a').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-    
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-    
 </body>
 </html>

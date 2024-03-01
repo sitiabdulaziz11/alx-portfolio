@@ -1,13 +1,13 @@
 .header {
     
-    height: 70px;
+    height: 60px;
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -45px;
 }
 
 
@@ -26,16 +26,17 @@ body {
 .body_text {
     display:flex;
     justify-content: center;
-    padding-left: 100px;
+    padding-left: 90px;
     padding-inline-end: 40px;
     font-size: 24px;
     align-items:flex-start;
-    margin: -15px;
+    margin: -10px;
     justify-items: center;
     text-align: center;
     width: 70%;
     font-weight: bold;
-    height: 25px;
+    height: 20px;
+    margin-top: 20px;
     /*background: linear-gradient(to right, /*rgb(4, 76, 124)*//*#013a3a, rgb(23, 184, 248));*/
     /* Subtract the header height from the viewport height */
 }
@@ -52,14 +53,22 @@ body {
 
 #head1 {
     width: 60%;
-    padding-left: 200px;
+    padding-left: 100px;
     color: rgb(163, 162, 162);
     font-size: 18px;
 }
 
+.goal {
+    padding-left: 100px;
+}
+
+.mission {
+    padding-left: 100px;
+}
+
 .parag2 {
-    width: 500px;
-    padding-left: 200px;
+    width: 700px;
+    padding-left: 100px;
     color:rgb(202, 201, 201);
     font-size: 18px;
 }
