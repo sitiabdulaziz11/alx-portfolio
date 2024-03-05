@@ -7,15 +7,15 @@
     <title>finder.com</title>
     <link rel="icon" type="image/x-icon" href="image/finder.PNG">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="css_directory/main_cssfile.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mainfile.css') }}">
 </head>
 <body>
-    <header class="header">
+    <header class="header1">
         <div class="navbar">
             <nav>
                 <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/about">About</a></li>
                     <li><a href="#">Contact us</a></li>
                     <li><a href="#">Login</a></li>
                     <li><a href="#">Sign up</a></li>
@@ -46,9 +46,9 @@
     <div class="get-started">
         <button><a href="home.html">Get Start</a></button>
     </div>
-    <div class="image-container">
+    <!--<div class="image-container">
         <img src="image/friends.PNG" alt="meeting after a long time">
-    </div>
+    </div>-->
     <!--<div class="photo">
        <img src="image/fri3.PNG">
         <img src="image/fri5.PNG">

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     <link rel="icon" type="image/x-icon" href="image/finder.PNG">
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='mainfile.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='about.css') }}">
+     
+    {% if title %}
+        <title>Finder.com - {{ title }}</title>
+    {% else %}
+        <title>Finder.com</title>
+    {% endif %}
+
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign up</a></li>
+                    <div class="header_form">
+                        <form action="">
+                            <input type="search" placeholder="Search your Beloved here">
+                            <i class="fa fa-search"></i>
+                        </form>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    {% block content %}{% endblock %}
+    <footer>
+        <div class="foot">
+          <h3>alx Best</h3>  
+        </div>
+    </footer>
+</body>
+</html>

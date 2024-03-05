@@ -1,14 +1,10 @@
 body {
     background: linear-gradient(to right, rgb(6, 76, 133), rgb(4, 196, 4));
     color:rgb(192, 197, 197);
-    padding: 0;
-    margin: 0;
 }
 
 .header {
     background-color:  rgb(3, 92, 128);
-    padding-right: 43px;
-    margin-left: -43px;
     height: 70px;
     width: 100%;
     display: flex;
@@ -23,9 +19,9 @@ body {
     color: aliceblue;
 }
 .about_parag {
-    width: 900px;
+    width: 1000px;
     margin: 60px;
     padding: 80px;
-    font-size: 28px;
+    font-size: 25px;
     color: rgb(219, 211, 211);
 }
