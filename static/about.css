@@ -25,3 +25,15 @@ body {
     font-size: 25px;
     color: rgb(219, 211, 211);
 }
+
+footer {
+    display:grid;
+    background-color: #013a3a; /*rgb(8, 8, 8); */
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    bottom: 0px;
+    left: 0px;
+}

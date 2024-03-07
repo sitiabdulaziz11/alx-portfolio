@@ -6,7 +6,7 @@
 .header {
     /*background: rgb(0,44,69);*/
     background-color:  rgb(3, 92, 128);
-    height: 60px;
+    height: 70px;
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -87,8 +87,9 @@
 .howtouse1 {
     background: rgb(2, 77, 107);
     width: 100%;
-    padding: 0px;
+    top: 0px;
     display: flex;
+    margin: 0px;
 }
 
 .left_body_form input {
