@@ -6,20 +6,21 @@ from portfolio.models import User
 
 
 @app.route("/")
+@app.route('/landing_page.html')
 def landing_page():
     html_content =  render_template('landing_page.html')
     response = Response(html_content, content_type='text/html')
     return response
 
-@app.route("/home")
+@app.route("/home.html")
 def home():
     return render_template('home.html', title='Home pag')
 
-@app.route("/about")
+@app.route("/about.html")
 def about():
     return render_template('about.html', title='About pag')
 
-@app.route("/sign_up", methods=['GET', 'POST'])
+@app.route("/sign_up.html", methods=['GET', 'POST'])
 def sign_up():
     form1 = Sign_upForm()
     if form1.validate_on_submit():
@@ -30,7 +31,7 @@ def sign_up():
          return redirect(url_for('landing_page'))
     return render_template('sign_up.html', title='Sign up page', form=form1)
 
-@app.route("/login", methods=['GET', 'POST'])
+@app.route("/login.html", methods=['GET', 'POST'])
 def login():
     form2 = LoginForm()
     if form2.validate_on_submit():
