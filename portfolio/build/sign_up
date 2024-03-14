@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     <link rel="icon" type="image/x-icon" href="image/finder.PNG">
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="/static/home.css">
+    <link rel="stylesheet" type="text/css" href="/static/mainfile.css">
+    <link rel="stylesheet" type="text/css" href="/static/about.css">
+     
+    
+        <title>Finder.com - Sign up page</title>
+    
+
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="/sign_up">Sign up</a></li>
+                    <div class="header_form1">
+                        <form action="">
+                            <input type="search" placeholder="Search your Beloved here">
+                            <i class="fa fa-search"></i>
+                        </form>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="col-md-6">
+        <div class="cont-section">
+            <form method="Post" action="">
+                <input id="csrf_token" name="csrf_token" type="hidden" value="IjVmYzhhOWVlMzViYmY2MWVlYTU1MzBhYzRiMjNhODdkMWJhNDYxMWIi.ZfLuog.E0k_N41-GITxsvjWxXduthBpp2c">
+                <fieldset class="form-group">
+                    <legend class="border-bottom mb-4">Join Today</legend>
+                    <div class="form-group">
+                        <!--<label class="form-control-label" for="username">Username</label>
+                        <input class="form-control form-control-lg" id="username" maxlength="50" minlength="3" name="username" required type="text" value="">-->
+                        <label class="form-control-label" for="username">Username</label>
+                        
+                            <input class="form-control form-control-lg" id="username" maxlength="50" minlength="3" name="username" required type="text" value="">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label" for="email">Email</label>
+                        
+                            <input class="form-control form-control-lg" id="email" name="email" required type="text" value="">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label" for="password">password</label>
+                        
+                            <input class="form-control form-control-lg" id="password" name="password" required type="password" value="">
+                        
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label" for="confirm_password">confirm password</label>
+                        
+                            <input class="form-control form-control-lg" id="confirm_password" name="confirm_password" required type="password" value="">
+                        
+                    </div>
+                </fieldset>
+                <div class="form-group">
+                    <input class="btn btn-outline-info" id="submit" name="submit" type="submit" value="Sign up">
+                </div>
+            </form>
+        </div>
+    </div> 
+
+    <footer>
+        <div class="foot">
+          <h3>alx Best</h3>  
+        </div>
+    </footer>
+</body>
+</html>

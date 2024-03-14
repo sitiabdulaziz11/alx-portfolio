@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     <link rel="icon" type="image/x-icon" href="image/finder.PNG">
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="/static/home.css">
+    <link rel="stylesheet" type="text/css" href="/static/mainfile.css">
+    <link rel="stylesheet" type="text/css" href="/static/about.css">
+     
+    
+        <title>Finder.com - Home pag</title>
+    
+
+</head>
+<body>
+    <header class="header">
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="/sign_up">Sign up</a></li>
+                    <div class="header_form1">
+                        <form action="">
+                            <input type="search" placeholder="Search your Beloved here">
+                            <i class="fa fa-search"></i>
+                        </form>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="howtouse1">
+        <div class="howtouse">
+            <h1 id="h2">Digital Bridge to Loved Ones</h1>
+            <p><strong>Finder website</strong> is your digital bridge, that dedicated to reuniting lost individuals with their loved ones in short period of time, leveraging the power of today's fast-paced world technology.</p>
+            <h2 id="h2">Here's how it works:</h2>
+            <p class="para4"><h4 id="h1">1. Define Your Search:</h4>First Decide who you're looking for. If it's a family member, head to the family category. If it's a friend, the friend category is where you want to be.</p>
+            <p class="para4"><h4 id="h1">2. Search by Name:</h4>Enter the full name of the person you're searching for in the search bar.</p>
+            <p class="para4"><h4 id="h1">3. Compare Information:</h4>If the individual exists in our database, Finder will retrieve full profile to compare other information.</p>
+            <p class="para4"><h4 id="h1">4. Create a Profile:</h4>If the full name isn't found, don't worry. Our platform allows you to create profiles for yourself and your loved ones. fill the details in the below button.</p>
+            <p class="para4"><h4 id="h1">5.Stay Updated:</h4>Once your profile is set up, you'll receive real-time notifications whenever there's a new match. You can also visit the site at any time to check if the person is exist or not.</p>
+            <p class="para4">Good Luck, Get start</p>
+        </div>
+    </div>
+    <div class="text1">
+        <div class="left_text">
+            <p>Finder information</p>
+        </div>
+        <div class="right_text">
+            <h3>To be found information</h3>
+        </div>
+    </div>
+    <div class="body_form1">
+        <div class="left_body_form">
+            <form action="" method="post">
+                <input type="text" name="name" placeholder="Full name" required>
+                <input type="number" name="age" placeholder="Age">
+                <input type="email" name="email" placeholder="Email">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="right_body_form">
+            <form action="" method="post">
+                <input type="text" name="name" placeholder="Full name" required>
+                <input type="number" name="age" placeholder="Age">
+                <input type="email" name="email" placeholder="Email">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot">
+          <h3>alx Best</h3>  
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,4 +1,4 @@
-from flask import render_template, url_for, flash, redirect, request
+from flask import render_template, url_for, flash, redirect, request, Response
 from portfolio.forms import Sign_upForm, LoginForm
 from flask_login import login_user, current_user, logout_user, login_required
 from portfolio import app, db, bcrypt
@@ -7,7 +7,9 @@ from portfolio.models import User
 
 @app.route("/")
 def landing_page():
-    return render_template('landing_page.html')
+    html_content =  render_template('landing_page.html')
+    response = Response(html_content, content_type='text/html')
+    return response
 
 @app.route("/home")
 def home():
@@ -28,9 +30,10 @@ def sign_up():
          return redirect(url_for('landing_page'))
     return render_template('sign_up.html', title='Sign up page', form=form1)
 
-@app.route("/login", methods=['GET', 'post'])
+@app.route("/login", methods=['GET', 'POST'])
 def login():
     form2 = LoginForm()
     if form2.validate_on_submit():
         user = User.query.filter_by(email=form2.email.data).first()
+        return render_template('login.html', title='Login', form=form2)
     return render_template('login.html', title='Login', form=form2)

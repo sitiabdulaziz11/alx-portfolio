@@ -1,0 +1,39 @@
+body {
+    background: linear-gradient(to right, rgb(6, 76, 133), rgb(4, 196, 4));
+    color:rgb(192, 197, 197);
+}
+
+.header {
+    background-color:  rgb(3, 92, 128);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0px;
+}
+
+#aboutus {
+    color: aliceblue;
+}
+.about_parag {
+    width: 1000px;
+    margin: 60px;
+    padding: 80px;
+    font-size: 25px;
+    color: rgb(219, 211, 211);
+}
+
+footer {
+    display:grid;
+    background-color: #013a3a; /*rgb(8, 8, 8); */
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    bottom: 0px;
+    left: 0px;
+}
