@@ -1,12 +1,8 @@
-frozen-flask==1.0.2
-email-validator==2.1.1
 flask==3.0.2
 Flask-Bcrypt==1.0.1
 Flask-Login==0.6.3
 flask-sqlalchemy==3.1.1
 flask-wtf==1.2.1
-Jinja2==3.1.2
-mysql-connector-python==8.3.0
 mysqlclient==2.2.1
 requests==2.31.0
 wtforms==3.1.2
