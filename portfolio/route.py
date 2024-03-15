@@ -6,9 +6,9 @@ from portfolio.models import User
 
 
 @app.route("/")
-@app.route('/landing.html')
+@app.route('/index.html')
 def landing_page():
-    html_content =  render_template('landing.html')
+    html_content =  render_template('index.html')
     response = Response(html_content, content_type='text/html')
     return response
 
