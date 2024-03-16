@@ -7,7 +7,7 @@ from portfolio.models import User
 
 @app.route("/")
 @app.route('/index.html')
-def landing_page():
+def index():
     html_content =  render_template('index.html')
     response = Response(html_content, content_type='text/html')
     return response
@@ -28,8 +28,8 @@ def sign_up():
          db.session.add(user)
          db.session.commit()
          flash(f'Your Account has ben created! You are now able to log in', 'success')
-         return redirect(url_for('/index.html'))
-    return render_template('/sign_up.html', title='Sign up page', form=form1)
+         return redirect(url_for('home'))
+    return render_template('sign_up.html', title='Sign up page', form=form1)
 
 @app.route("/login.html", methods=['GET', 'POST'])
 def login():
