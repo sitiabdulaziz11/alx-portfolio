@@ -28,7 +28,7 @@ def sign_up():
          db.session.add(user)
          db.session.commit()
          flash(f'Your Account has ben created! You are now able to log in', 'success')
-         return redirect(url_for('index'))
+         return redirect(url_for('index.html'))
     return render_template('sign_up.html', title='Sign up page', form=form1)
 
 @app.route("/login.html", methods=['GET', 'POST'])
