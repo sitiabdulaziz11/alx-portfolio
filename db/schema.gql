@@ -1,0 +1,9 @@
+type Entry {
+  fullName: String!
+  email: String!
+  frequency: String!
+}
+
+type Query {
+  allEntries: [Entry!]!
+}
