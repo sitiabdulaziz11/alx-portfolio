@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="static/image/finder.PNG">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+   
 </head>
 <body>
     <header class="header1">
@@ -19,14 +20,22 @@
                     <li><a href="#">Contact us</a></li>
                     <li><a href="{{ url_for('login') }}">Login</a></li>
                     <li><a href="{{ url_for('sign_up') }}">Sign up</a></li>
-                <div class="header_form1">
-                    <form action="">
-                        <input type="search" placeholder="Search your Beloved here">
-                        <i class="fa fa-search"></i>
-                    </form>
-                </div>
+                    <div class="header_form1">
+                        <form action="">
+                            <input type="search" placeholder="Search your Beloved here">
+                            <i class="fa fa-search"></i>
+                        </form>
+                    </div>
                 </ul>
+                <div class="hamburger1">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
+            <!--<button class"hamburger is-active">
+                <div class="bar"></div>
+            </button>-->
         </div>
     </header>
     <div class="body_text">
