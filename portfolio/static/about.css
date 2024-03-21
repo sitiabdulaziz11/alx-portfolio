@@ -1,6 +1,8 @@
 body {
     background: linear-gradient(to right, rgb(6, 76, 133), rgb(4, 196, 4));
     color:rgb(192, 197, 197);
+    padding: 0px;
+    margin: 0px;
 }
 
 .header {
@@ -20,6 +22,7 @@ body {
 }
 .about_parag {
     width: 1000px;
+    height: 800px;
     margin: 60px;
     padding: 80px;
     font-size: 25px;
