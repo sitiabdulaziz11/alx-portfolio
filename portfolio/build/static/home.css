@@ -13,9 +13,9 @@
     align-items: center;
     position: fixed;
     top: 0;
-    left: 0;
     padding: 0px;
     margin: 0px;
+    
 }
 
 .text1 {
@@ -131,7 +131,6 @@
 .header_form form{
     position: relative;
     top: 20px;
-    left: 20px;
     transform: translate(-50%,-50%);
     transition: all 1s;
     width: 45px;
@@ -194,7 +193,7 @@
     align-items: center;
     padding: 10px;
     margin: 10px;
-    /*background-color: #f0f0f0;*/
+    left: -75px;
 }
 
 .navbar ul {
@@ -202,13 +201,15 @@
     margin: 0px;
     padding: 0px;
     display: flex;
+    gap: 30px;
 }
 
 .navbar ul li {
     margin-left: 22px;
     margin-right: 25px;
     display: flex;
-    
+    font-family: "Times New Roman", Times, serif;
+    font-size: 23px;
 }
 
 .navbar ul li a {
@@ -216,7 +217,7 @@
     color: rgba(215, 226, 213, 0.952);
     font-weight: bold;
     margin-top: 10px;
-    font-size: 18px;
+    
 }
 
 .navbar ul li a:hover {

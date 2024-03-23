@@ -8,29 +8,39 @@
     <link rel="icon" type="image/png" href="static/image/finder.PNG">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="/static/styles.css">
+   
 </head>
 <body>
-    <header class="header1">
-        <div class="navbar">
-            <nav>
-                <ul>
-                    <li><a href="/home.html">Home</a></li>
-                    <li><a href="/about.html">About</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="/login.html">Login</a></li>
-                    <li><a href="/sign_up.html">Sign up</a></li>
-                <div class="header_form1">
-                    <form action="">
-                        <input type="search" placeholder="Search your Beloved here">
-                        <i class="fa fa-search"></i>
-                    </form>
-                </div>
+    <header>
+        <div class="header1">
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact us</a></li>
+                    <li class="nav-item"><a href="/login.html" class="nav-link">Login</a></li>
+                    <li class="nav-item"><a href="/sign_up.html" class="nav-link">Sign up</a></li>
+                    
                 </ul>
+                <div class="header_form1">
+                        <form action="">
+                            <input type="search" placeholder="Search your Beloved here">
+                            <i class="fa fa-search"></i>
+                        </form>
+                    </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
+            <!--<button class"hamburger is-active">
+                <div class="bar"></div>
+            </button>-->
         </div>
     </header>
     <div class="body_text">
-        <h1> Welcome to Finder</h1>
+        <h1> Welcome to FinderPage</h1>
     </div>
     <div class="contents">
         <div class="paragraph1">
@@ -42,6 +52,7 @@
     </div>
     <div id="access1">
         <p>Search for a person from the search bar</p>
+        <p>If not found</p>
         <p>Fill out a form with the person information</p>
     </div>
     <div id="phrase-container"></div>
@@ -56,7 +67,7 @@
         <img src="image/fri5.PNG">
     </div>-->
     <div class="body_para">
-        <h4 id="head1">We understand the emotional toll of losing someone and the importance of finding closure, and we are dedicated to create a platform.</h4>
+        <p id="head1">We understand the emotional toll of losing someone and the importance of finding closure, and we are dedicated to create a platform.</p>
         <div class="parag2"> 
             <p>- Our platform is dedicated to reuniting lost individuals with their loved ones, whether they are friends or family.</p>
             <p>- With our user-friendly interface and robust search capabilities, we aim to make the process of finding missing persons as efficient and effective as possible.</p>
@@ -79,6 +90,7 @@
           <h3>alx Best</h3>  
         </div>
     </footer>
+    <script src="../script.js"></script>
     <script>
         // Array of phrases to display
         const phrases = [
