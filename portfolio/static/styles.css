@@ -126,63 +126,59 @@
     left: 110px;
     top: 20px;
   }
+ 
+}
+
+@media(max-width:450px){
   h1{
+    display: block;
     width: 100%;
     right: 40px;
+    margin: 0px;
     position: relative;
   }
-  
   h3{
-    margin-top: 110px;
-    right: 40px;
+    display: block;
+    width: 250px;
+    margin: 0px;
     position: relative;
-  }
-
-  p{
     left: 20px;
-    padding-left: 20px;
-    margin-top: 110px;
-    position: relative;
-    display: flex;
-    top: 110px;
-    margin: 10px;
-    font-size: 18px;
+    top: 90px;
   }
 
-  #access1 p::before {
-    display: block;
-    font-size: 35px; 
-    padding-left: 8px;
-    font-weight: bold;
-    margin-top: 0px;
-    top: 50px;
-    position: relative;
+  #access1 {
+   height: 100px;
   }
 
- 
-
-}
-
-
-@media(max-width:400px){
-  h{
-    right: 70px;
-  }
-  h3{
-    margin-top: 110px;
-    position: relative;
-    right: 80px;
+  .paragraph1{
+    height: 20px;
   }
 
   p{
+    display: block;
     width: 360px;
-    left: 30px;
+    left: 25px;
     padding-left: 40px;
-    top: 110px;
-    margin: 10px;
+    top: 230px;
+    margin: 20px;
     position: relative;
     display: flex;
     font-size: 18px;
+  }
+
+  .interact{
+    display: block;
+    right: 230px;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+    display: block;
+    top: 250px;
+    margin: 10px;
+    width: 350px;
+  }
+  .contents{
+    display: none;
   }
 
   #access1 p::before {
@@ -196,10 +192,10 @@
   }
 
 }
-
 
 @media(max-width:290px){
   p{
+    display: block;
     width: 260px;
     left: 70px;
     margin: 10px;
@@ -208,7 +204,7 @@
     position: relative;
     display: flex;
     font-size: 16px;
-}
+  }
 }
 
 
@@ -340,13 +336,14 @@ body {
 }
 
 .contents{
+  position: relative;
+  top: 60px;
   display:flex;
   justify-content: space-between;
-  margin: 55px;
-  background-size: cover;
+  margin: 0px;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 20px;
+  padding: 0px;
   color: white;
   /*background-image: url('image/friends.PNG');*/
 
@@ -362,49 +359,39 @@ body {
 }
 
 .paragraph1 {
+  position: relative;
   margin-left: 30px;
   padding-left: 10px;
   color: rgb(152, 243, 6);
   display: flex;
   margin: 5px;
-  top: 0%;
+  top: 0px;
   width: 100%;
   font-weight: bold;
   font-size: 30px;
-  height: 10px;
 }
 .paragraph2 {
+  position: relative;
   color:#8de985;
   display: flex;
-  flex-direction: column;
-  width: 60%;
+  right: 15px;
+  width: 90%;
   font-weight: bold;
   font-size: 30px;
-  margin-left: 20px;
-  padding-left: 10px;
-}
-
-.sign{
-  margin: 70px;
-  height: 620px;
-}
-
-.login1{
-  margin: 30px;
-  padding: 60px;
-  height: 650px;
-  
 }
 
 #access1 {
+  position: relative;
   float: right;
-  width: 450px;
+  right: 150px;
+  top: 20px;
+  width: 500px;
   margin-left: 100px;
   font-weight: bold;
-  margin-top: -120px;
-  font-size:23px;
-  height: 40px;
+  margin-top: 0px;
+  font-size:23px; 
 }
+
 #access1 p::before {
   content: "\2023";  /*Unicode character for a bullet point */
   color: rgb(10, 10, 10); 
@@ -415,15 +402,13 @@ body {
 }
 
 #phrase-container {
+  position: relative;
   font-size:35px;
   display: flex;
   justify-items: center;
-  /*background: linear-gradient(to right, #013a3a, rgb(23, 184, 248));*/
   text-align: center;
-  margin-top: -80px;
-  top: 100%; /*after to i can change the margin*/
-  padding: -10px;
-  margin-bottom: -20px;
+  margin-top: 10px;
+  top: 50px; /*after to i can change the margin*/
   color: rgb(247, 17, 197);
   background-color: black;
   width: 350px;
@@ -457,7 +442,17 @@ background-color: rgb(87, 212, 87);
   color: rgb(7, 158, 158);
 }
 
+.sign{
+  margin: 70px;
+  height: 620px;
+}
 
+.login1{
+  margin: 30px;
+  padding: 60px;
+  height: 650px;
+  
+}
 
 footer {
   display:grid;
