@@ -28,7 +28,7 @@ def sign_up():
          db.session.add(user)
          db.session.commit()
          flash(f'Your Account has ben created! You are now able to log in', 'success')
-         return redirect(url_for('https://finderpage.netlify.app/sign_up.html'))
+         return redirect(url_for('home'))
     return render_template('sign_up.html', title='Sign up page', form=form1)
 
 @app.route("/login.html", methods=['GET', 'POST'])
@@ -36,5 +36,5 @@ def login():
     form2 = LoginForm()
     if form2.validate_on_submit():
         user = User.query.filter_by(email=form2.email.data).first()
-        return render_template('login.html', title='Login', form=form2)
+        return render_template(url_for('home'), title='Login', form=form2)
     return render_template('login.html', title='Login', form=form2)
