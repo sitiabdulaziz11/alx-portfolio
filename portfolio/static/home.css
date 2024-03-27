@@ -19,26 +19,26 @@
 }
 
 .text1 {
+    width: 75%;
     display:flex;
     justify-content: space-between;
 }
 
 .left_text {
-    margin: -20px;
-    margin-left: 20px;
-    padding: 50px;
+    margin: -0px;
+    padding-left: 50px;
     margin-top: 30px;
-    color: rgb(19, 19, 19);
+    color: white;
     font-size: 30px;
     font-weight: bold;
     display: flex;
 }  
 
 .right_text {
-    margin: 20px;
-    padding: 50px;
+    margin: 0px;
+    padding: 0px;
     margin-top: 30px;
-    color: rgb(19, 19, 19);
+    color: white;
     font-size: 30px;
     font-weight: bold;
     display: flex;
@@ -46,20 +46,21 @@
 
 .body_form1 {
     display:flex;
-    justify-content: space-between;
+    position: relative;
+    justify-content: center;
     height: 500px;
+    width: 70%;
 }
+
 
 .right_body_form form {
     width: 50%;
     height: 40px;
-    margin: 50px;
-    margin-top: -125px;
     float: right;
     align-items: center;
-    padding: 65px;
-    padding-right: -10px;
+    padding-right: 10px;
     display: flexbox;
+    
 }
 
 .right_body_form input {
@@ -73,13 +74,10 @@
 .left_body_form form{
     width: 50%;
     height: 40px;
-    margin: -50px;
-    margin-top: -110px;
     margin-left: 30px;
     display: flexbox;
     justify-content:flex-start;
     align-items: center;
-    padding: 50px;
     padding-left: -20px;
     
 }
@@ -104,7 +102,6 @@
 .howtouse {
     justify-content: center;
     align-items: center;
-    height: 1050px;
     margin: 100px;
     padding-left: 80px;
     color: rgb(238, 233, 233);
@@ -127,6 +124,23 @@
     color: black;
     font-weight: bold
 }
+
+
+
+@media(max-width:700px){
+    .howtouse {
+        position: relative;
+        top: 40px;
+        margin: 0px;
+        left: 20px;
+        padding-left: 0px;
+        width: 90%;
+    }
+
+}
+
+
+
 
 .header_form form{
     position: relative;

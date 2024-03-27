@@ -17,15 +17,15 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='about.css') }}">
      
     {% if title %}
-        <title>Finder.com - {{ title }}</title>
+        <title>finderpage - {{ title }}</title>
     {% else %}
-        <title>Finder.com</title>
+        <title>finderpage</title>
     {% endif %}
 
 </head>
 <body>
     <header>
-        <div class="header1">
+        <div class="header">
             <nav class="navbar">
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="{{ url_for('home') }}" class="nav-link">Home</a></li>

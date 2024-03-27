@@ -1,8 +1,8 @@
 body {
-    background: linear-gradient(to right, rgb(6, 76, 133), rgb(4, 196, 4));
-    color:rgb(192, 197, 197);
     padding: 0px;
     margin: 0px;
+    background: linear-gradient(to right, rgb(6, 76, 133), rgb(4, 196, 4));
+    color:rgb(192, 197, 197);
 }
 
 .header {
@@ -14,20 +14,35 @@ body {
     align-items: center;
     position: fixed;
     top: 0;
-    
 }
 
 #aboutus {
     color: aliceblue;
+    display: flex;
 }
 .about_parag {
-    width: 1000px;
-    height: 800px;
-    margin: 60px;
-    padding: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    width: 60%;
+    height: 900px;
+    top: 150px;
+    left: 100px;
     font-size: 25px;
     color: rgb(219, 211, 211);
 }
+
+@media(max-width:700px){
+    .about_parag{
+        width: 95%;
+        left: 20px;
+        top: 100px;
+        height: 1000px;
+    }
+    #aboutus {
+        margin-bottom: 0px;
+    }
+}
+
 
 footer {
     display:grid;
