@@ -20,15 +20,21 @@ def home():
 def about():
     return render_template('about.html', title='About pag')
 
+@app.route("/contact.html")
+def contact():
+    return render_template('contact.html', title='contact pag')
+
 @app.route("/sign_up.html", methods=['GET', 'POST'])
 def sign_up():
     form1 = Sign_upForm()
     if form1.validate_on_submit():
-         user = User(username=form1.username.data, email=form1.email.data, password=form1.password.data)
-         db.session.add(user)
-         db.session.commit()
-         flash(f'Your Account has ben created! You are now able to log in', 'success')
-         return redirect(url_for('home'))
+        hashed_password = bcrypt.generate_password_hash(form1.password.data).decode('utf-8')
+        user = User(username=form1.username.data, email=form1.email.data, password=hashed_password)
+        """user = User(username=form1.username.data, email=form1.email.data, password=form1.password.data)""" # this is for unhashed plain text password
+        db.session.add(user)
+        db.session.commit()
+        flash(f'Your Account has ben created! You are now able to log in', 'success')
+        return redirect(url_for('login'))
     return render_template('sign_up.html', title='Sign up page', form=form1)
 
 @app.route("/login.html", methods=['GET', 'POST'])

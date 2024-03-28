@@ -8,7 +8,6 @@
   top: 0px;
   margin: 0 auto;
   right: 20px;
-  
 }
 
 .navbar {
@@ -23,7 +22,6 @@
   margin: 0px;
   padding: 0px;
   display: flex;
-  gap: 20px;
   
 }
 
@@ -52,7 +50,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 60px;
+  gap: 30px;
 }
 
 .nav-link{
@@ -149,7 +147,7 @@
   }
 }
 
-@media(max-width:1239px){
+@media(max-width:1024px){
   .hamburger{
     display: block;
   }
@@ -450,15 +448,18 @@ background-color: rgb(87, 212, 87);
 }
 
 .sign{
+  position: relative;
+  top: 30px;
   margin: 70px;
   height: 620px;
 }
 
 .login1{
+  position: relative;
+  top: 50px;
   margin: 30px;
   padding: 60px;
   height: 650px;
-  
 }
 
 footer {

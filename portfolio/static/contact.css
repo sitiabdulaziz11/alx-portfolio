@@ -1,0 +1,17 @@
+.contact{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 100px;
+  
+}
+
+.arc{
+  height: 90vh;
+}
+
+@media(max-width:450px){
+  .contact{
+    width: auto;
+  }
+}
