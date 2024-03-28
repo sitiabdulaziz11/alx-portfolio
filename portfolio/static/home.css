@@ -16,6 +16,13 @@
     margin: 0px;  
 }
 
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
 .text1 {
     width: 75%;
     display:flex;
@@ -131,6 +138,15 @@
         width: 90%;
     }
 
+    .h2{
+        position: relative;
+        left: 10px;
+        top: 35px;
+    }
+    .f1{
+        position: relative;
+        top: 30px;
+    }
 }
 
 .header_form form{
